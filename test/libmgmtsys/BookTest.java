@@ -1,4 +1,4 @@
-package coe528project;
+package libmgmtsys;
 
 import javafx.scene.control.CheckBox;
 import org.junit.After;

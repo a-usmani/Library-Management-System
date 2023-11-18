@@ -1,4 +1,4 @@
-package coe528project;
+package libmgmtsys;
 
 import org.junit.After;
 import org.junit.AfterClass;
