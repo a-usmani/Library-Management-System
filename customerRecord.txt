@@ -1,0 +1,3 @@
+apple,bee,640
+johndoe,pass122,0
+APple,aww222,0

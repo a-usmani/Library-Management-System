@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="t" prefHeight="485.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528project.editBooksFXMLController">
+   <children>
+      <TextField fx:id="bookName" layoutX="158.0" layoutY="266.0" prefHeight="34.0" prefWidth="228.0" />
+      <Label fx:id="BookName" layoutX="28.0" layoutY="266.0" text="Book Name">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="BookPrice" layoutX="28.0" layoutY="319.0" text="Book Price($)">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="add" defaultButton="true" layoutX="407.0" layoutY="266.0" mnemonicParsing="true" onAction="#btnAddClicked" prefHeight="86.0" prefWidth="163.0" style="-fx-background-color: #253342; -fx-text-fill: white;" text="_Add">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="59.0" layoutY="383.0" mnemonicParsing="true" onAction="#btnDeleteClicked" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: red; -fx-text-fill: white;" text="_Delete">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="331.0" layoutY="383.0" mnemonicParsing="true" onAction="#btnBackClicked" prefHeight="60.0" prefWidth="213.0" style="-fx-background-color: #253342; -fx-text-fill: white;" text="_Back">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <TextField fx:id="bookPrice" layoutX="158.0" layoutY="319.0" prefHeight="34.0" prefWidth="228.0" />
+      <Label fx:id="error" layoutX="158.0" layoutY="366.0" prefHeight="17.0" prefWidth="228.0" textFill="#f80909" />
+      <TableView fx:id="tableview" layoutX="28.0" layoutY="30.0" prefHeight="200.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="266.0" style="-fx-font-size: 20; -fx-border-color: black;" text="Book" />
+          <TableColumn fx:id="priceColumn" prefWidth="275.0" style="-fx-font-size: 20; -fx-border-color: black;" text="Price($)" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
